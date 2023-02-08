@@ -28,6 +28,7 @@ public class ApiCalls {
 	public Volumes GetVolumes(String searchTerm, String searchParameter, String specificSearch)
 			throws IOException, InterruptedException {
 
+		System.out.println("Search whith specific criteria");
 		String newTerm = searchTerm.replace("\s", "+").trim();
 		String basicUrl = "https://www.googleapis.com/books/v1/volumes?q=";
 		String uri = MessageFormat.format("{0}{1}", basicUrl, newTerm);
@@ -45,6 +46,8 @@ public class ApiCalls {
 	}
 
 	public Item GetVolumeInfo(String volumeId) throws IOException, InterruptedException {
+
+		System.out.println("Search for more information about each volume");
 		String bacicUrl = "https://www.googleapis.com/books/v1/volumes/";
 		String uri = MessageFormat.format("{0}?key={1}", bacicUrl, this.apiKey);
 
@@ -59,6 +62,8 @@ public class ApiCalls {
 	// https://www.googleapis.com/books/v1/users/102701940585560677579/bookshelves&key=AIzaSyA02mardc5vqd2FPf3a8WuyC5xdhiheeu4
 
 	public UserBookshelves GetUserBookshelves(String userId) throws IOException, InterruptedException {
+
+		System.out.println("Search list of public shelves other user");
 		String uri = MessageFormat.format("https://www.googleapis.com/books/v1/users/{0}/bookshelves", userId);
 		var request = HttpRequest.newBuilder(URI.create(uri)).build();
 		var response = client.send(request, BodyHandlers.ofString());
@@ -71,6 +76,8 @@ public class ApiCalls {
 	}
 
 	public Bookshelve GetUserBookshelveInfo(String userId, int bookshelveId) throws IOException, InterruptedException {
+
+		System.out.println("Search more information about each public shelf");
 		String uri = MessageFormat.format("https://www.googleapis.com/books/v1/users/{0}/bookshelves/{1}", userId,
 				bookshelveId);
 		var request = HttpRequest.newBuilder(URI.create(uri)).build();
@@ -84,6 +91,8 @@ public class ApiCalls {
 
 	public Volumes GetUserBookshelveVolumes(String userId, String bookshelveId)
 			throws IOException, InterruptedException {
+
+		System.out.println("Search the contents of another user's public shelf");
 		String uri = MessageFormat.format("https://www.googleapis.com/books/v1/users/{0}/bookshelves/{1}/volumes",
 				userId, bookshelveId);
 		System.out.println(uri);

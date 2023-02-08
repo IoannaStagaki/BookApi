@@ -31,6 +31,19 @@ public class App {
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
 		}
-		
 	}
+
+	public static void Menu() {
+		System.out.println("Παρακαλώ επικλέξτε:");
+		System.out.println("1.Αναζήτηση Τόμων");
+		System.out.println("2.Διαχείριση Ραφιών");
+		int usechoise = 0;
+		if (true) {
+			System.out.println("=== Αναζήτηση Τόμων===");
+			for (int i = 0; i < usechoise.size(); i++) {
+			}
+		
+		}
+	}
+
 }
