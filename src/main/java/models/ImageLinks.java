@@ -6,6 +6,7 @@ class ImageLink {
 	private String small;
 	private String medium;
 	private String large;
+	private String extraLarge;
 
 	public String getSmallThumbnail() {
 		return smallThumbnail;
@@ -45,6 +46,14 @@ class ImageLink {
 
 	public void setLarge(String large) {
 		this.large = large;
+	}
+
+	public String getExtraLarge() {
+		return extraLarge;
+	}
+
+	public void setExtraLarge(String extraLarge) {
+		this.extraLarge = extraLarge;
 	}
 
 }

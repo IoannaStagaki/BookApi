@@ -1,8 +1,10 @@
 package models;
 
+import java.text.MessageFormat;
+
 public class Bookshelve {
 	private String kind;
-	private int id;
+	private String id;
 	private String title;
 	private String access;
 	private String updated;
@@ -18,11 +20,11 @@ public class Bookshelve {
 		this.kind = kind;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -73,4 +75,13 @@ public class Bookshelve {
 	public void setVolumesLastUpdated(String volumesLastUpdated) {
 		this.volumesLastUpdated = volumesLastUpdated;
 	}
+
+	@Override
+	public String toString() {
+		String result = MessageFormat.format("- ID:{0}\n- Τίτλος:{1}\n- Πλήθος Τόμων:{2}\n"
+				, id, title, volumeCount);
+
+		return result;
+	}
+
 }

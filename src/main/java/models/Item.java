@@ -1,5 +1,7 @@
 package models;
 
+import java.text.MessageFormat;
+
 public class Item {
 	private String kind;
 	private String id;
@@ -72,6 +74,16 @@ public class Item {
 
 	public void setLayerInfo(LayerInfo layerInfo) {
 		this.layerInfo = layerInfo;
+	}
+
+	@Override
+	public String toString() {
+		String result = MessageFormat.format("- ID:{0}\n- Title:{1}\n- Subtitle:{2}\n- Authors:{3}\n- Description:{4} ",
+				id,
+				volumeInfo.getTitle(), volumeInfo.getSubtitle(), String.join(", ", volumeInfo.getAuthors()),
+				volumeInfo.getDescription());
+
+		return result;
 	}
 
 }
