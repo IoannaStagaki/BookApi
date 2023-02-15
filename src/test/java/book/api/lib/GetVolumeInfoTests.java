@@ -12,7 +12,7 @@ import api.ApiCalls;
 import models.Item;
 
 public class GetVolumeInfoTests {
-//Required parameter: q
+
 	private ApiCalls api;
 
 	public GetVolumeInfoTests() {
@@ -20,13 +20,11 @@ public class GetVolumeInfoTests {
 	}
 	@Test
 	public void getVolumeInfoReturnsOK () throws IOException, InterruptedException {
-		// given
+
 		String volumeId = "lqHNugAACAAJ";
-		
-		// when 
+
 		Item item = api.GetVolumeInfo(volumeId);
 
-		// then
 		boolean itemIsNull = item.equals(null);
 		boolean itemHasInfo = item.getId().length() > 0;
 		assertFalse(itemIsNull);
