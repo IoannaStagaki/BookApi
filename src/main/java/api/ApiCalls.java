@@ -34,7 +34,9 @@ public class ApiCalls {
 		String newTerm = URLEncoder.encode(searchTerm, StandardCharsets.UTF_8.toString());
 		String basicUrl = "https://www.googleapis.com/books/v1/volumes?q=";
 		String uri = MessageFormat.format("{0}{1}", basicUrl, newTerm);
-		if (searchParameter != null || searchParameter != "") {
+		boolean searchParameterIsEmpty = searchParameter.equals("");
+		boolean searchParameterIsNull = searchParameter.equals(null);
+		if (!searchParameterIsEmpty && !searchParameterIsNull) {
 			uri = MessageFormat.format("{0}+{1}:{2}&key={3}", uri, searchParameter, specificSearch, this.apiKey);
 		}
 
