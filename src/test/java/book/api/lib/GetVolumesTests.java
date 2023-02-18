@@ -17,7 +17,7 @@ public class GetVolumesTests {
 		String term = "lord of the rings";
 		ApiCalls api = new ApiCalls();
 
-		Volumes volumes = api.GetVolumes(term, "", "");
+		Volumes volumes = api.GetVolumes(term, "", "", null, null, null, null, null);
 		boolean volumesHasItems = volumes != null && volumes.getItems().size() > 0;
 		assertTrue(volumesHasItems);
 	}
@@ -30,7 +30,7 @@ public class GetVolumesTests {
 		String parameter = "inauthor";
 		ApiCalls api = new ApiCalls();
 
-		Volumes volumes = api.GetVolumes(term, specificTerm, parameter);
+		Volumes volumes = api.GetVolumes(term, specificTerm, parameter, null, null, null, null, null);
 		boolean volumesHasItems = volumes != null && volumes.getItems().size() > 0;
 		assertTrue(volumesHasItems);
 	}
@@ -41,7 +41,7 @@ public class GetVolumesTests {
 		ApiCalls api = new ApiCalls();
 
 		Exception ex = assertThrows(Exception.class, () -> {
-			api.GetVolumes(term, null, null);
+			api.GetVolumes(term, null, null, null, null, null, null, null);
 		});
 		String message = ex.getMessage();
 		String expectedMessage = "Cannot invoke \"String.length()\" because \"s\" is null";
@@ -56,7 +56,7 @@ public class GetVolumesTests {
 		ApiCalls api = new ApiCalls();
 
 		Exception ex = assertThrows(Exception.class, () -> {
-			api.GetVolumes(term, "", "");
+			api.GetVolumes(term, "", "", null, null, null, null, null);
 		});
 
 		String message = ex.getMessage();

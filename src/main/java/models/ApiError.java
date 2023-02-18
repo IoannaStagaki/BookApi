@@ -3,6 +3,8 @@ package models;
 public class ApiError {
 	private String code;
 	private String message;
+	private String status;
+	private String details;
 
 	public ApiError() {
 	}
@@ -39,5 +41,20 @@ public class ApiError {
 		this.errors = errors;
 	}
 
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getDetails() {
+		return details;
+	}
+
+	public void setDetails(String details) {
+		this.details = details;
+	}
 
 }

@@ -78,10 +78,17 @@ public class Item {
 
 	@Override
 	public String toString() {
-		String result = MessageFormat.format("- ID:{0}\n- Title:{1}\n- Subtitle:{2}\n- Authors:{3}\n- Description:{4} ",
+		String authors = "";
+		if (volumeInfo.getAuthors() != null && volumeInfo.getAuthors().size() != 0) {
+			authors = String.join(", ", volumeInfo.getAuthors());
+		}
+
+		String result = MessageFormat.format(
+				"- ID:{0}\n- Τίτλο:{1}\n- Υπότιτλος:{2}\n- Συγγραφέας:{3}\n- Περιγραδή:{4}\n- Διαδέσιμο PDF:{5}\n- Διαθέσιμο EPUB:{6}:",
 				id,
-				volumeInfo.getTitle(), volumeInfo.getSubtitle(), String.join(", ", volumeInfo.getAuthors()),
-				volumeInfo.getDescription());
+				volumeInfo.getTitle(), volumeInfo.getSubtitle(), authors,
+				volumeInfo.getDescription(), accessInfo.getPdf().getIsAvailable(),
+				accessInfo.getEpub().getIsAvailable());
 
 		return result;
 	}
