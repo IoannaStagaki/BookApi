@@ -78,7 +78,8 @@ public class Bookshelve {
 
 	@Override
 	public String toString() {
-		String result = MessageFormat.format("- ID:{0}\n- Τίτλος:{1}\n- Πλήθος Τόμων:{2}\n"
+		String result = MessageFormat
+				.format("- ID Δημόσιου Ραφιού:{0}\n- Τίτλος Δημόδιου Ραφιού:{1}\n- Πλήθος Τόμων Δημόσιου Ραφιού:{2}\n"
 				, id, title, volumeCount);
 
 		return result;

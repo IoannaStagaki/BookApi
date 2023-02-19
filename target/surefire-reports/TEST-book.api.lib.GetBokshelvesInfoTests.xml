@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="book.api.lib.GetBokshelvesInfoTests" time="0.999" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="book.api.lib.GetBokshelvesInfoTests" time="1.003" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GR"/>
     <property name="sun.boot.library.path" value="/Users/joannastagaki/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.x86_64_17.0.5.v20221102-0933/jre/lib"/>
-    <property name="sun.java.command" value="/Users/joannastagaki/eclipse/lib/target/surefire/surefirebooter16682098833316305444.jar /Users/joannastagaki/eclipse/lib/target/surefire 2023-02-18T18-09-14_347-jvmRun1 surefire8858616776070611510tmp surefire_010163794214943009372tmp"/>
+    <property name="sun.java.command" value="/Users/joannastagaki/eclipse/lib/target/surefire/surefirebooter12811610284027295080.jar /Users/joannastagaki/eclipse/lib/target/surefire 2023-02-19T19-55-12_709-jvmRun1 surefire7647357583840275533tmp surefire_017012475914001238914tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/joannastagaki/eclipse/lib/target/test-classes:/Users/joannastagaki/eclipse/lib/target/classes:/Users/joannastagaki/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.1/junit-jupiter-engine-5.7.1.jar:/Users/joannastagaki/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/joannastagaki/.m2/repository/org/junit/platform/junit-platform-engine/1.7.1/junit-platform-engine-1.7.1.jar:/Users/joannastagaki/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/joannastagaki/.m2/repository/org/junit/platform/junit-platform-commons/1.7.1/junit-platform-commons-1.7.1.jar:/Users/joannastagaki/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.1/junit-jupiter-api-5.7.1.jar:/Users/joannastagaki/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.1/junit-jupiter-params-5.7.1.jar:/Users/joannastagaki/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/joannastagaki/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/joannastagaki/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/Users/joannastagaki/eclipse/lib/target/surefire/surefirebooter16682098833316305444.jar"/>
+    <property name="surefire.real.class.path" value="/Users/joannastagaki/eclipse/lib/target/surefire/surefirebooter12811610284027295080.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="17.0.5+8"/>
@@ -57,7 +57,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="getBookshelvesInfoEmptyTwoParametersReturnsExeption" classname="book.api.lib.GetBokshelvesInfoTests" time="0.306"/>
-  <testcase name="getBookshelvesInfoReturnsOK" classname="book.api.lib.GetBokshelvesInfoTests" time="0.353"/>
-  <testcase name="getBookshelvesInfoEmptyOneParameterReturnsExeption" classname="book.api.lib.GetBokshelvesInfoTests" time="0.329"/>
+  <testcase name="getBookshelvesInfoEmptyTwoParametersReturnsExeption" classname="book.api.lib.GetBokshelvesInfoTests" time="0.308"/>
+  <testcase name="getBookshelvesInfoReturnsOK" classname="book.api.lib.GetBokshelvesInfoTests" time="0.355"/>
+  <testcase name="getBookshelvesInfoEmptyOneParameterReturnsExeption" classname="book.api.lib.GetBokshelvesInfoTests" time="0.33"/>
 </testsuite>

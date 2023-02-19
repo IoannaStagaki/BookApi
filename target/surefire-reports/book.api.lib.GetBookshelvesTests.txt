@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: book.api.lib.GetBookshelvesTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.736 s - in book.api.lib.GetBookshelvesTests
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.663 s - in book.api.lib.GetBookshelvesTests

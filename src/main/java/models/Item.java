@@ -84,11 +84,10 @@ public class Item {
 		}
 
 		String result = MessageFormat.format(
-				"- ID:{0}\n- Τίτλο:{1}\n- Υπότιτλος:{2}\n- Συγγραφέας:{3}\n- Περιγραδή:{4}\n- Διαδέσιμο PDF:{5}\n- Διαθέσιμο EPUB:{6}:",
+				"- ID:{0}\n- Τίτλο:{1}\n- Υπότιτλος:{2}\n- Συγγραφέας:{3}\n- Περιγραφή:{4}\n- Διαδέσιμο PDF:{5}\n",
 				id,
 				volumeInfo.getTitle(), volumeInfo.getSubtitle(), authors,
-				volumeInfo.getDescription(), accessInfo.getPdf().getIsAvailable(),
-				accessInfo.getEpub().getIsAvailable());
+				volumeInfo.getDescription(), accessInfo.getPdf().getIsAvailable());
 
 		return result;
 	}
